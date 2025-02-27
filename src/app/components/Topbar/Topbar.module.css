@@ -1,0 +1,67 @@
+.topbar{
+    width: 100%;
+    margin: 0 auto;
+    height: 60px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 2px 1px #e7e7e7;
+    position: fixed;
+    z-index: 1000;
+    color: black;
+}
+
+
+.topbar__boxUser{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-left: 0rem;
+}
+
+.topbar__boxUser svg{
+    object-fit: cover;
+}
+
+.topbar__boxLogout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbar__boxLogo{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+.topbar__boxSecond{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: right;
+    gap: 1rem;
+    margin-right: 1rem;
+    padding-right: 2rem;
+}
+
+
+.topbar__icon{
+    width: 100px;
+    height: 40px;
+    object-fit: cover;
+}

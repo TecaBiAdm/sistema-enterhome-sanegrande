@@ -1,0 +1,76 @@
+
+.menu__hamburguer{
+    width: 25px;
+    height: 40px;
+    margin-left: 1rem;
+    margin-top: 5rem;
+}
+
+.menu__list {
+    display: block;
+    margin-top: -1rem;
+     font-size: .75rem;
+    font-weight: 700;
+  }
+  
+  .menu__hamburguer {
+    margin-bottom: 20px;
+  }
+
+  
+
+.icon{
+    width: 10px;
+    height: 10px;
+}
+
+.icon__text{
+    color: #ffffff;
+    margin-left: .5rem;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 1px; 
+    background-color: rgb(212, 212, 212);
+}
+
+ 
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: white; 
+    border-radius: 4px; 
+}
+  
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: white; /* cor de fundo do botão ao passar o mouse */
+}
+  
+
+.sidebarOpen {
+    width: 15%; 
+}
+  
+.sidebarClosed {
+    width: 64px; 
+    border: 1px solid #d9d9d9 ;
+    
+}
+
+.sidebar_compressed{
+    width: 50px;
+    height: 94.5vh;
+    background-color: white;
+    box-shadow: 1px 2px 2px 1px #b8b8b8;
+    margin-top: 3rem;
+    border: 1px solid #d9d9d9 ;
+    padding: .2rem;
+}
+
+.menu__hamburguer__compressed{
+    width: 30px;
+    height: 30px;
+    margin-left: 0.5rem;
+    border: 1px solid #d9d9d9 ;
+    margin-top: 1rem;
+}
+  

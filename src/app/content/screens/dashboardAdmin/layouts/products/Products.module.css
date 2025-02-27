@@ -1,0 +1,36 @@
+.product{
+    width: 100%;
+    margin: 4rem auto;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 2rem;
+}
+
+
+.product__table__top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    gap: 2rem;
+}
+
+.product__table__search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 55%;
+    gap: 1rem;
+}
+
+.product__table__input{
+    width: 80%;
+}
+
+.product__table__actions{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+  

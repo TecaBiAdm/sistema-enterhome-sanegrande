@@ -1,0 +1,81 @@
+.container {
+    padding: 2rem 0;
+  }
+  
+  .filterBox {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .filterCategory, .filterBrand {
+    margin-bottom: 1rem;
+  }
+  
+  .searchBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem
+  }
+  
+  .searchButton {
+    margin-left: 1rem;
+    background-color: #4E392A;
+    color: #4E392A
+  }
+  
+  .productsGrid {
+    margin-bottom: 2rem;
+  }
+  
+  .productCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .productImage {
+    height: 200px;
+    border-radius: 4px;
+  }
+  
+  .paginationBox {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .relatedProductsTitle {
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+  }
+  
+  .relatedProductsGrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .footer {
+    background-color: #2c544a;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+
+  .addToCartButton {
+    position: absolute;
+    top: 8px;
+    right: -10px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  

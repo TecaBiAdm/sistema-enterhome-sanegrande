@@ -1,0 +1,52 @@
+.plans{
+    width: 100%;
+    margin: 4rem auto;
+    height: auto;
+    overflow-y: hidden;
+    padding: 2rem;
+}
+
+
+.plans__table__top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    gap: 2rem;
+}
+
+.plans__table__search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    
+}
+
+.plans__table__input{
+    width: 80%;
+    border-radius: 10px;
+}
+
+.plans__table__actions{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.plans__table__actions_download_new{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: end;
+    padding: 1rem;
+}
+
+.plans__search__input{
+    height: 35px;
+}
+
+  

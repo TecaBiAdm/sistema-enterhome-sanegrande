@@ -1,0 +1,61 @@
+.plans{
+    margin: 0 auto;
+    height: auto;
+    overflow-y: hidden;
+    padding: 2rem;
+    overflow-x: hidden;
+}
+
+
+.plans__table__top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    gap: 2rem;
+}
+
+.plans__table__search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    
+}
+
+.plans__table__input{
+    width: 80%;
+    border-radius: 10px;
+}
+
+
+.plans__table__container{
+    margin-top: 1rem;
+    border: .5px solid #d9d9d9;
+    border-radius: 9px;
+    overflow-x: none;
+}
+
+.plans__table__actions{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.plans__table__actions_download_new{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: end;
+    padding: 1rem;
+}
+
+.plans__search__input{
+    height: 35px;
+    box-shadow: none;
+}
+
+  

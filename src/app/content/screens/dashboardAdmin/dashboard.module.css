@@ -1,0 +1,39 @@
+.dashboardContent {
+    display: flex;
+    flex-direction: row;
+    height: 100vh; /* Garante que ocupa toda a altura da tela */
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+.sidebar {
+    width: 320px; /* Largura fixa para o sidebar */
+    min-width: 280px;
+    background-color: #ffffff; /* Cor de fundo para diferenciar */
+    height: auto; /* Ocupar toda a altura */
+    overflow-y: auto; /* Permitir rolagem caso o conteúdo seja longo */
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 4px; 
+    height: 20px;
+    background-color: rgb(212, 212, 212);
+}
+
+ 
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #3A8DFF; 
+    border-radius: 9px; 
+    height: 20px;
+}
+  
+
+
+
+.content {
+    flex: 1; /* Ocupar todo o espaço restante */
+    background-color: white;
+    padding: 16px; /* Espaço interno */
+    overflow-y: hidden; /* Caso o conteúdo precise rolar */
+    height: 100%;
+}

@@ -1,0 +1,79 @@
+.tasks{
+    margin: 0 auto;
+    height: auto;
+    overflow-y: none;
+    overflow-x: hidden;
+    overflow-y: none;
+    border-radius: 8px;
+    background: #e0e0e0
+}
+
+.task-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .task-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 300ms ease;
+  }
+
+.tasks__table{
+    margin-top: 1rem;
+    border: .5px solid #d9d9d9;
+    border-radius: 9px;
+    overflow-x: none;
+}
+
+
+.tasks__table__top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    gap: 2rem;
+}
+
+.tasks__table__search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    
+}
+
+.tasks__table__input{
+    width: 80%;
+    border-radius: 10px;
+}
+
+.tasks__table__actions{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.tasks__search__input{
+    height: 35px;
+}
+
+.scrollColumn::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollColumn::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+  
+  .scrollColumn::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  
+  .scrollColumn::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  

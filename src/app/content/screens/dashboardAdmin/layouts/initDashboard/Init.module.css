@@ -1,0 +1,19 @@
+.init{
+    margin: 0rem auto;
+    height: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 2rem;
+    
+}
+
+
+.init__notifications{
+    width: 100%;
+    background-color: white;
+    height: 100px;
+    border-bottom: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    margin-top: -2.4rem;
+}
+  

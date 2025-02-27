@@ -1,0 +1,11 @@
+.dashboardContainer {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.dashboardContent{
+    overflow-x: hidden;
+}
+

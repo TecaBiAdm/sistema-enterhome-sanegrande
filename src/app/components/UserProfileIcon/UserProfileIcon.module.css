@@ -1,0 +1,6 @@
+/* components/UserProfile/UserProfile.module.css */
+.userProfile {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+  }

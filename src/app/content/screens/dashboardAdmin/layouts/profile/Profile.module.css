@@ -1,0 +1,45 @@
+.profile{
+    width: 100%;
+    margin: 4rem auto;
+    height: 500px;
+    overflow-y: auto;
+    padding: 2rem;
+}
+
+.profile__form{
+    margin-top: 1rem;
+}
+
+.profile__box__img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.profile__img{
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__icon{
+    width: 150px;
+    height: 150px;
+    transform: scale(5px);
+}
+
+
+.profile__form__box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
