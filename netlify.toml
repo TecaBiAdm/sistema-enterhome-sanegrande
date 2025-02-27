@@ -1,8 +1,0 @@
-[build]
-  functions = "out_functions" # Specify the functions directory
-  publish = ".next" # Specify the publish directory
-
-[[build.ignore]]
-  path = "node_modules" # Exclude node_modules
-  path = ".cache" # Exclude cache directories
-  path = "large-files" # Exclude any other large directories
