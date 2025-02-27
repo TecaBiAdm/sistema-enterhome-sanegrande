@@ -3,7 +3,7 @@ const URL_LOCAL = 'http://localhost:5000/api/'
 
 export const fetchedCollectors = async () => {
   try {
-    const response = await fetch(`${URL_LOCAL}collectors`, { 
+    const response = await fetch(`${URL}collectors`, { 
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ export const fetchedCollectors = async () => {
 export const fetchedCollectorsByCompany = async (companyName) => {
   console.log(companyName)
   try {
-    const response = await fetch(`${URL_LOCAL}collectors?company=${companyName}`, { 
+    const response = await fetch(`${URL}collectors?company=${companyName}`, { 
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ export const fetchedCollectorsByCompany = async (companyName) => {
 
 export const deleteCollectorById = async (purchaseId) => {
   try {
-    const response = await fetch(`${URL_LOCAL}collectors/${purchaseId}`, { 
+    const response = await fetch(`${URL}collectors/${purchaseId}`, { 
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

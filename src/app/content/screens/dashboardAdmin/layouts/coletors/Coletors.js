@@ -46,10 +46,9 @@ import { useCompany } from "@/app/context/CompanyContext";
 import PurchaseModal from "@/app/components/Modal/Admin/ModalShop";
 
 import {
-  deletePurchaseById,
+  deleteCollectorById,
   fetchedCollectors,
   fetchedCollectorsByCompany,
-  fetchedPurchasesByCompany,
 } from "./API";
 import FilterDrawer from "@/app/components/FilterDrawer/FilterDrawer";
 import FilterPurchases from "@/app/components/FilterPurchases/FilterPurchases";
@@ -1042,7 +1041,7 @@ export default function Coletors() {
   };
 
   const handleDeletePurchase = async (id) => {
-    const deleted = await deletePurchaseById(id);
+    const deleted = await deleteCollectorById(id);
     if (deleted) {
       setPurchases((prevItem) => prevItem.filter((item) => item.id !== id));
       setFilteredPurchases((prevExpense) =>
