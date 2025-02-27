@@ -28,7 +28,7 @@ export const AuthProvider = ({ children }) => {
 
   const fetchUserDetails = async (userId, token) => {
     try {
-      const response = await fetch(`${URL_LOCAL}user/${userId}`, {
+      const response = await fetch(`${URL}user/${userId}`, {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,

@@ -3,7 +3,7 @@ const URL_LOCAL = 'http://localhost:5000/api/'
 
 export const fetchedSuppliers = async (companyName) => {
   try {
-    const response = await fetch(`${URL_LOCAL}supplier?company=${companyName}`, { 
+    const response = await fetch(`${URL}supplier?company=${companyName}`, { 
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ export const fetchedSuppliers = async (companyName) => {
 export const fetchedPurchasesByCompany = async (companyName) => {
   console.log(companyName)
   try {
-    const response = await fetch(`${URL_LOCAL}purchase?company=${companyName}`, { 
+    const response = await fetch(`${URL}purchase?company=${companyName}`, { 
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ export const fetchedPurchasesByCompany = async (companyName) => {
 
 export const deleteSupplierById = async (supplierId) => {
   try {
-    const response = await fetch(`${URL_LOCAL}supplier/${supplierId}`, { 
+    const response = await fetch(`${URL}supplier/${supplierId}`, { 
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',

@@ -5,7 +5,7 @@ const URL_LOCAL = 'http://localhost:5000/api/'
 export const fetchedEmployeesByCompany = async (companyName) => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}employees?company=${companyName}`,
+      `${URL}employees?company=${companyName}`,
       {
         method: "GET",
         headers: {
@@ -27,7 +27,7 @@ export const fetchedEmployeesByCompany = async (companyName) => {
 export const fetchRegionals = async () => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}regionals`,
+      `${URL}regionals`,
       {
         method: "GET",
         headers: {
@@ -49,7 +49,7 @@ export const fetchRegionals = async () => {
 export const fetchMunicipios = async () => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}municipios`,
+      `${URL}municipios`,
       {
         method: "GET",
         headers: {
@@ -71,7 +71,7 @@ export const fetchMunicipios = async () => {
 export const fetchLocals = async () => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}local`,
+      `${URL}local`,
       {
         method: "GET",
         headers: {
@@ -93,7 +93,7 @@ export const fetchLocals = async () => {
 export const createSupplier = async (supplierData) => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}supplier`,
+      `${URL}supplier`,
       {
         method: "POST",
         headers: {
@@ -120,7 +120,7 @@ export const createSupplier = async (supplierData) => {
 export const updateSupplier = async (supplierData, id) => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}supplier/${id}`,
+      `${URL}supplier/${id}`,
       {
         method: "PATCH",
         headers: {

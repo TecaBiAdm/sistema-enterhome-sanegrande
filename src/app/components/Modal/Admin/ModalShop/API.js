@@ -5,7 +5,7 @@ const URL_LOCAL = 'http://localhost:5000/api/'
 export const fetchedSuppliersByCompany = async (companyName) => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}supplier?company=${companyName}`,
+      `${URL}supplier?company=${companyName}`,
       {
         method: "GET",
         headers: {
@@ -27,7 +27,7 @@ export const fetchedSuppliersByCompany = async (companyName) => {
 export const createPurchase = async (purchaseData) => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}purchase`,
+      `${URL}purchase`,
       {
         method: "POST",
         body: purchaseData,
@@ -49,7 +49,7 @@ export const createPurchase = async (purchaseData) => {
 export const updatePurchase = async (purchaseData, id) => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}purchase/${id}`,
+      `${URL}purchase/${id}`,
       {
         method: "PUT",
         body: purchaseData, // Passando o FormData diretamente como body

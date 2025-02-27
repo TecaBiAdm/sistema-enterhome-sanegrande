@@ -5,7 +5,7 @@ const URL_LOCAL = 'http://localhost:5000/api/'
 export const fetchedEmployeesByCompany = async (companyName) => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}employees?company=${companyName}`,
+      `${URL}employees?company=${companyName}`,
       {
         method: "GET",
         headers: {
@@ -27,7 +27,7 @@ export const fetchedEmployeesByCompany = async (companyName) => {
 export const fetchRegionals = async () => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}regionals`,
+      `${URL}regionals`,
       {
         method: "GET",
         headers: {
@@ -49,7 +49,7 @@ export const fetchRegionals = async () => {
 export const fetchMunicipios = async () => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}municipios`,
+      `${URL}municipios`,
       {
         method: "GET",
         headers: {
@@ -71,7 +71,7 @@ export const fetchMunicipios = async () => {
 export const fetchLocals = async () => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}local`,
+      `${URL}local`,
       {
         method: "GET",
         headers: {
@@ -92,7 +92,7 @@ export const fetchLocals = async () => {
 
 
 export const createEmployee = async (employeeData) => {
-  const response = await fetch(`${URL_LOCAL}employees`, {
+  const response = await fetch(`${URL}employees`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json", // Certifique-se que o backend aceita JSON
@@ -110,7 +110,7 @@ export const createEmployee = async (employeeData) => {
 export const updateEmployee = async (employeeData, id) => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}employees/${id}`,
+      `${URL}employees/${id}`,
       {
         method: "PATCH",
         headers: {

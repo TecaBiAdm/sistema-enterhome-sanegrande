@@ -5,7 +5,7 @@ const URL_LOCAL = 'http://localhost:5000/api/'
 export const fetchedSuppliersByCompany = async (companyName) => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}supplier?company=${companyName}`,
+      `${URL}supplier?company=${companyName}`,
       {
         method: "GET",
         headers: {
@@ -27,7 +27,7 @@ export const fetchedSuppliersByCompany = async (companyName) => {
 export const createCollector = async (collectorData) => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}collectors`,
+      `${URL}collectors`,
       {
         method: "POST",
         body: collectorData,
@@ -50,7 +50,7 @@ export const createCollector = async (collectorData) => {
 export const fetchedEmployeesByCompany = async (companyName) => {
     try {
       const response = await fetch(
-        `${URL_LOCAL}employees?company=${companyName}`,
+        `${URL}employees?company=${companyName}`,
         {
           method: "GET",
           headers: {
@@ -72,7 +72,7 @@ export const fetchedEmployeesByCompany = async (companyName) => {
 export const updateCollector = async (collectorData, id) => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}collector/${id}`,
+      `${URL}collector/${id}`,
       {
         method: "PATCH",
         body: collectorData, // Passando o FormData diretamente como body
@@ -93,7 +93,7 @@ export const updateCollector = async (collectorData, id) => {
 export const fetchRegionals = async () => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}regionals`,
+      `${URL}regionals`,
       {
         method: "GET",
         headers: {
@@ -115,7 +115,7 @@ export const fetchRegionals = async () => {
 export const fetchMunicipios = async () => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}municipios`,
+      `${URL}municipios`,
       {
         method: "GET",
         headers: {
@@ -137,7 +137,7 @@ export const fetchMunicipios = async () => {
 export const fetchLocals = async () => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}local`,
+      `${URL}local`,
       {
         method: "GET",
         headers: {

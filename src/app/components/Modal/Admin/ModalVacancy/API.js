@@ -5,7 +5,7 @@ const URL_LOCAL = 'http://localhost:5000/api/'
 export const fetchedEmployeesByCompany = async (companyName) => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}employees?company=${companyName}`,
+      `${URL}employees?company=${companyName}`,
       {
         method: "GET",
         headers: {
@@ -27,7 +27,7 @@ export const fetchedEmployeesByCompany = async (companyName) => {
 export const createExpense = async (expenseData) => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}expenses/vacation`,
+      `${URL}expenses/vacation`,
       {
         method: "POST",
         body: expenseData,
@@ -49,7 +49,7 @@ export const createExpense = async (expenseData) => {
 export const updateExpense = async (expenseData, id) => {
   try {
     const response = await fetch(
-      `${URL_LOCAL}expenses/vacation/${id}`,
+      `${URL}expenses/vacation/${id}`,
       {
         method: "PUT",
         body: expenseData, // Passando o FormData diretamente como body

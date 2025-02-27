@@ -34,7 +34,7 @@ const LoginPage = () => {
         }),
         onSubmit: async (values, { setSubmitting }) => {
             try {
-                const response = await fetch(`${URL_LOCAL}login`, {
+                const response = await fetch(`${URL}login`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(values),
